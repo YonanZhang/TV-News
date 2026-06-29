@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三星 Samsung — 2026H1 出货明细</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); min-height: 100vh; padding: 30px; }
+        .container { max-width: 1100px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); }
+        .back-link { display: inline-block; color: #2563eb; text-decoration: none; font-size: 14px; margin-bottom: 20px; }
+        .back-link:hover { text-decoration: underline; }
+        .brand-header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #e2e8f0; }
+        .brand-header h1 { font-size: 30px; color: #0f172a; }
+        .brand-header .rank { display: inline-block; background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 10px; }
+        h2 { color: #1e293b; margin: 28px 0 14px; font-size: 19px; border-left: 4px solid #2563eb; padding-left: 12px; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        table th, table td { border: 1px solid #e2e8f0; padding: 13px 10px; text-align: center; font-size: 14px; }
+        table th { background: #1e40af; color: #fff; font-weight: 600; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .bar-container { display: flex; align-items: center; gap: 8px; }
+        .bar { height: 18px; border-radius: 4px; transition: width 0.5s; }
+        .bar-oled { background: linear-gradient(90deg, #8b5cf6, #7c3aed); }
+        .bar-miniled { background: linear-gradient(90deg, #06b6d4, #0891b2); }
+        .bar-lcd { background: linear-gradient(90deg, #94a3b8, #64748b); }
+        .bar-obm { background: linear-gradient(90deg, #10b981, #059669); }
+        .bar-oem { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .info-card { padding: 16px; background: #f8fafc; border-radius: 8px; margin-bottom: 12px; line-height: 1.7; color: #334155; }
+        .highlight { color: #059669; font-weight: 600; }
+        .warn { color: #dc2626; }
+        .source { color: #94a3b8; font-size: 12px; margin-top: 30px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回总排名</a>
+        <div class="brand-header">
+            <h1>三星 Samsung<span class="rank">全球第1</span></h1>
+            <p style="color:#64748b;margin-top:6px;">2026年上半年出货 1,770万台 | 全球市占率 18.3%</p>
+        </div>
+
+        <h2>一、OEM vs OBM 出货结构</h2>
+        <table>
+            <tr><th>分类</th><th>出货量（万台）</th><th>占比</th><th>可视化</th><th>说明</th></tr>
+            <tr>
+                <td><strong>OBM 自有品牌</strong></td>
+                <td>1,735</td>
+                <td>98.0%</td>
+                <td><div class="bar-container"><div class="bar bar-obm" style="width:220px"></div>98%</div></td>
+                <td>Samsung主品牌全球直销，基本不涉足代工</td>
+            </tr>
+            <tr>
+                <td><strong>OEM/ODM 代工</strong></td>
+                <td>35</td>
+                <td>2.0%</td>
+                <td><div class="bar-container"><div class="bar bar-oem" style="width:5px"></div>2%</div></td>
+                <td>少量面板外供及品牌授权业务</td>
+            </tr>
+        </table>
+
+        <h2>二、面板技术出货结构</h2>
+        <table>
+            <tr><th>技术类型</th><th>出货量（万台）</th><th>占比</th><th>可视化</th><th>同比变化</th></tr>
+            <tr>
+                <td><strong>QD-OLED</strong></td>
+                <td>145</td>
+                <td>8.2%</td>
+                <td><div class="bar-container"><div class="bar bar-oled" style="width:40px"></div>8.2%</div></td>
+                <td class="highlight">+28.8%</td>
+            </tr>
+            <tr>
+                <td><strong>Neo QLED / MiniLED</strong></td>
+                <td>460</td>
+                <td>26.0%</td>
+                <td><div class="bar-container"><div class="bar bar-miniled" style="width:130px"></div>26%</div></td>
+                <td class="highlight">+12.3%</td>
+            </tr>
+            <tr>
+                <td><strong>QLED（传统量子点）</strong></td>
+                <td>480</td>
+                <td>27.1%</td>
+                <td><div class="bar-container"><div class="bar bar-lcd" style="width:135px"></div>27.1%</div></td>
+                <td>-5.6%</td>
+            </tr>
+            <tr>
+                <td><strong>LCD 液晶</strong></td>
+                <td>685</td>
+                <td>38.7%</td>
+                <td><div class="bar-container"><div class="bar bar-lcd" style="width:195px"></div>38.7%</div></td>
+                <td class="warn">-8.2%</td>
+            </tr>
+        </table>
+
+        <h2>三、区域出货分布</h2>
+        <table>
+            <tr><th>区域</th><th>出货占比</th><th>出货量（万台）</th><th>趋势</th></tr>
+            <tr><td>北美</td><td>34%</td><td>602</td><td>→ 持平</td></tr>
+            <tr><td>欧洲</td><td>28%</td><td>496</td><td class="highlight">↑ +3.2%</td></tr>
+            <tr><td>亚太</td><td>15%</td><td>266</td><td class="warn">↓ -12.5%</td></tr>
+            <tr><td>拉美/中东非</td><td>18%</td><td>319</td><td class="highlight">↑ +5.8%</td></tr>
+            <tr><td>中国</td><td>5%</td><td>89</td><td class="warn">↓ 退出线下</td></tr>
+        </table>
+
+        <h2>四、核心产品线与技术亮点</h2>
+        <div class="info-card">
+            <strong>Neo QLED 8K（旗舰）：</strong>QN900D系列，MiniLED背光+8K分辨率，75"/85"主销；<br>
+            <strong>QD-OLED（高端）：</strong>S95D/S90D系列，55"-77"，自发光量子点，画质天花板；<br>
+            <strong>The Frame（ lifestyle）：</strong>艺术电视品类开创者，32"-85"，2026新增QLED面板升级；<br>
+            <strong>MicroLED（超高端）：</strong>89"/101"/114"，面向定制安装市场，年出货数百台级别；<br>
+            <strong>Tizen OS：</strong>自有智能系统，全球月活用户1.8亿+，广告&订阅收入持续增长。
+        </div>
+
+        <h2>五、经营分析</h2>
+        <div class="info-card">
+            <strong>营收：</strong>Q1电视业务营收约58亿美元，高端机型（$1500+）贡献超50%营收，75"+超大屏营收占比33.2%；<br>
+            <strong>利润：</strong>QD-OLED+Neo QLED贡献超70%电视利润，中小屏利润持续压缩；<br>
+            <strong>战略：</strong>退出中国线下市场、聚焦欧美高端赛道，QD-OLED面板扩产至200万片/年；<br>
+            <strong class="warn">风险：</strong>TCL/海信在75"+大屏份额快速提升，三星超大屏优势面临挑战。
+        </div>
+
+        <div class="source">数据来源：奥维睿沃、TrendForce、Omdia 综合整理 | 部分数据为行业估算值</div>
+    </div>
+</body>
+</html>
