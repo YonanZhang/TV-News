@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCL — 2026H1 出货明细</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); min-height: 100vh; padding: 30px; }
+        .container { max-width: 1100px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 8px 40px rgba(0,0,0,0.2); }
+        .back-link { display: inline-block; color: #2563eb; text-decoration: none; font-size: 14px; margin-bottom: 20px; }
+        .back-link:hover { text-decoration: underline; }
+        .brand-header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #e2e8f0; }
+        .brand-header h1 { font-size: 30px; color: #0f172a; }
+        .brand-header .rank { display: inline-block; background: linear-gradient(135deg, #94a3b8, #64748b); color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 10px; }
+        h2 { color: #1e293b; margin: 28px 0 14px; font-size: 19px; border-left: 4px solid #dc2626; padding-left: 12px; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        table th, table td { border: 1px solid #e2e8f0; padding: 13px 10px; text-align: center; font-size: 14px; }
+        table th { background: #dc2626; color: #fff; font-weight: 600; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .bar-container { display: flex; align-items: center; gap: 8px; }
+        .bar { height: 18px; border-radius: 4px; }
+        .bar-oled { background: linear-gradient(90deg, #8b5cf6, #7c3aed); }
+        .bar-miniled { background: linear-gradient(90deg, #06b6d4, #0891b2); }
+        .bar-lcd { background: linear-gradient(90deg, #94a3b8, #64748b); }
+        .bar-obm { background: linear-gradient(90deg, #10b981, #059669); }
+        .bar-oem { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .info-card { padding: 16px; background: #f8fafc; border-radius: 8px; margin-bottom: 12px; line-height: 1.7; color: #334155; }
+        .highlight { color: #059669; font-weight: 600; }
+        .warn { color: #dc2626; }
+        .source { color: #94a3b8; font-size: 12px; margin-top: 30px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回总排名</a>
+        <div class="brand-header">
+            <h1>TCL<span class="rank">全球第2</span></h1>
+            <p style="color:#64748b;margin-top:6px;">2026年上半年出货 1,530万台 | 全球市占率 15.8% | 同比 +10.8%</p>
+        </div>
+
+        <h2>一、OEM vs OBM 出货结构（含茂佳MOKA）</h2>
+        <table>
+            <tr><th>分类</th><th>出货量（万台）</th><th>占比</th><th>可视化</th><th>说明</th></tr>
+            <tr>
+                <td><strong>OBM 自有品牌</strong></td>
+                <td>1,070</td>
+                <td>70.0%</td>
+                <td><div class="bar-container"><div class="bar bar-obm" style="width:180px"></div>70%</div></td>
+                <td>TCL主品牌全球直销，含TCL+FFALCON雷鸟</td>
+            </tr>
+            <tr>
+                <td><strong>OEM/ODM 代工</strong></td>
+                <td>460</td>
+                <td>30.0%</td>
+                <td><div class="bar-container"><div class="bar bar-oem" style="width:80px"></div>30%</div></td>
+                <td>茂佳MOKA全球#1 ODM工厂，代工多品牌</td>
+            </tr>
+        </table>
+        <div class="info-card">
+            <strong>茂佳MOKA ODM详情：</strong>5月出货约125万台（同比-15%），1-5月累计618万台；代工客户涵盖Philips、松下、小米等；2025年12月TCL单月出货首超三星登顶全球。
+        </div>
+
+        <h2>二、面板技术出货结构</h2>
+        <table>
+            <tr><th>技术类型</th><th>出货量（万台）</th><th>占比</th><th>可视化</th><th>同比变化</th></tr>
+            <tr>
+                <td><strong>OLED</strong></td>
+                <td>30</td>
+                <td>2.0%</td>
+                <td><div class="bar-container"><div class="bar bar-oled" style="width:10px"></div>2%</div></td>
+                <td>少量WOLED面板外采</td>
+            </tr>
+            <tr>
+                <td><strong>RGB MiniLED</strong></td>
+                <td>382</td>
+                <td>25.0%</td>
+                <td><div class="bar-container"><div class="bar bar-miniled" style="width:150px"></div>25%</div></td>
+                <td class="highlight">+35.6% ⬆</td>
+            </tr>
+            <tr>
+                <td><strong>QD-MiniLED / 传统MiniLED</strong></td>
+                <td>230</td>
+                <td>15.0%</td>
+                <td><div class="bar-container"><div class="bar bar-miniled" style="width:90px"></div>15%</div></td>
+                <td class="highlight">+28.2%</td>
+            </tr>
+            <tr>
+                <td><strong>LCD 液晶</strong></td>
+                <td>888</td>
+                <td>58.0%</td>
+                <td><div class="bar-container"><div class="bar bar-lcd" style="width:348px"></div>58%</div></td>
+                <td>-3.5%</td>
+            </tr>
+        </table>
+
+        <h2>三、区域出货分布</h2>
+        <table>
+            <tr><th>区域</th><th>出货占比</th><th>出货量（万台）</th><th>趋势</th></tr>
+            <tr><td>中国</td><td>28%</td><td>428</td><td class="highlight">↑ 国内品牌第一</td></tr>
+            <tr><td>北美</td><td>24%</td><td>367</td><td class="highlight">↑ +15.2%</td></tr>
+            <tr><td>欧洲</td><td>18%</td><td>275</td><td class="highlight">↑ +8.7%</td></tr>
+            <tr><td>拉美/新兴</td><td>20%</td><td>306</td><td class="highlight">↑ +22.1%</td></tr>
+            <tr><td>亚太其他</td><td>10%</td><td>153</td><td class="highlight">↑ +12.3%</td></tr>
+        </table>
+
+        <h2>四、核心产品线与技术亮点</h2>
+        <div class="info-card">
+            <strong>X11K系列（旗舰MiniLED）：</strong>RGB-MiniLED + 万象分区，峰值亮度5000nits，85"/98"；<br>
+            <strong>C12K系列（高端MiniLED）：</strong>QD-MiniLED，量子点+MiniLED融合，65"-85"主销；<br>
+            <strong>P12K系列（艺术电视）：</strong>超薄贴墙设计，MiniLED背光，对标三星The Frame；<br>
+            <strong>T7K/T6K系列（性价比MiniLED）：</strong>MiniLED下放至4000元档，推动市场渗透；<br>
+            <strong>垂直整合优势：</strong>华星光电面板自供率超60%，显著降低面板采购成本。
+        </div>
+
+        <h2>五、经营分析</h2>
+        <div class="info-card">
+            <strong>营收：</strong>2026Q1电视营收292.3亿元（+15.3%），净利润3.8亿元（+140%），盈利增速行业第一；<br>
+            <strong>增长引擎：</strong>北美+拉美合计贡献增量超100万台，MiniLED ASP提升带动利润改善；<br>
+            <strong>战略：</strong>"自有品牌+代工"双轮驱动，海外工厂（越南/墨西哥/巴西）降低关税风险；<br>
+            <strong>目标：</strong>全年出货冲击3,200万台，与三星差距有望缩至400万台以内；<br>
+            <strong class="warn">风险：</strong>面板价格波动、海外关税政策不确定性、与海信的第二之争日趋激烈。
+        </div>
+
+        <div class="source">数据来源：奥维睿沃、TrendForce、洛图科技 综合整理 | 部分数据为行业估算值</div>
+    </div>
+</body>
+</html>
